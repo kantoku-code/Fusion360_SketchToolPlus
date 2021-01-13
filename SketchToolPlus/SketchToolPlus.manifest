@@ -1,0 +1,13 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"addin",
+	"id":	"03e1a4cf-1cab-45ab-93d4-ef7c4aa1fcf9",
+	"author":	"kantoku",
+	"description":	{
+		"":	"スケッチ作業用のささやかなコマンドを提供します"
+	},
+	"version":	"0.0.1",
+	"runOnStartup":	false,
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
