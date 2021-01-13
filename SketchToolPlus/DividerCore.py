@@ -120,6 +120,8 @@ class DividerCore(Fusion360CommandBase):
             global _selCrvInfo, _txtCrvInfo
             global _splitInfo, _txtSplitInfo
 
+            decimal = ao.app.preferences.unitAndValuePreferences.generalPrecision
+
             if _selCrvInfo.obj.selectionCount < 1:
                 # crv non select
                 _txtCrvInfo.obj.text = _txtCrvInfo.text
@@ -127,8 +129,8 @@ class DividerCore(Fusion360CommandBase):
             else:
                 # crv select
                 crv = _selCrvInfo.obj.selection(0).entity
-                length = crv.length * _covUnit[0]
-                step = length / (_splitInfo.obj.value + 1)
+                length = round(crv.length * _covUnit[0], decimal)
+                step = round(length / (_splitInfo.obj.value + 1), decimal)
                 _txtCrvInfo.obj.text = f'{length} {_covUnit[1]}'
                 _txtSplitInfo.obj.text = f'{step} {_covUnit[1]}'
 

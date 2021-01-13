@@ -87,9 +87,12 @@ class PointsDistanceOnCurveCore(Fusion360CommandBase):
 
             global _covUnit, _txtResInfo
             msg = ''
+            decimal = ao.app.preferences.unitAndValuePreferences.generalPrecision
+
             # ok
             length, _ = DividerFactry.getPoint2PointLengthOnCurve(crv, pnt1, pnt2)
-            msg = f'サポート長さ{crv.length * _covUnit[0]} {_covUnit[1]}\n距離：{length * _covUnit[0]} {_covUnit[1]}'
+            msg = f'サポート長さ{round(crv.length * _covUnit[0], decimal)} {_covUnit[1]}\n'
+            msg += f'距離：{round(length * _covUnit[0], decimal)} {_covUnit[1]}'
             _txtResInfo.obj.text = msg
 
             # show point
