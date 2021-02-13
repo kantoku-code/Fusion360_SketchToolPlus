@@ -9,6 +9,7 @@
 
 from .DividerCore import DividerCore
 from .PointsDistanceOnCurveCore import PointsDistanceOnCurveCore
+from .SketchAnalysisView import SketchAnalysisView
 
 commands = []
 command_definitions = []
@@ -27,7 +28,6 @@ def run(context):
         'toolbar_panel_id': 'SketchPanel',
         'class': DividerCore
     }
-
     command_definitions.append(cmd)
 
     cmd = {
@@ -39,10 +39,18 @@ def run(context):
         'toolbar_panel_id': 'InspectPanel',
         'class': PointsDistanceOnCurveCore
     }
-
     command_definitions.append(cmd)
 
-
+    cmd = {
+        'cmd_name': 'Sketch Analysis',
+        'cmd_description': 'Sketch Analysis',
+        'cmd_id': 'sketchAnalysis',
+        'cmd_resources': './resources/SketchAnalysis',
+        'workspace': 'FusionSolidEnvironment',
+        'toolbar_panel_id': 'SketchConstraintsPanel',
+        'class': SketchAnalysisView
+    }
+    command_definitions.append(cmd)
 
     # Don't change anything below here:
     for cmd_def in command_definitions:

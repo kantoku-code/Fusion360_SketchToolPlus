@@ -7,6 +7,8 @@
 
 + 2点間の線上距離 : 指定した2点間の線上の距離を測定します。
 
++ SketchAnalysis : 拘束不足のスケッチ要素を強調表示します。
+
 ***
 ## インストール:
 
@@ -22,7 +24,7 @@
 
 + [2点間の線上距離](./doc/PointsDistanceOnCurve.md)
 
-
++ [SketchAnalysis](./doc/SketchAnalysis.md)
 
 ## アクション:
 以下の環境で確認しています。
