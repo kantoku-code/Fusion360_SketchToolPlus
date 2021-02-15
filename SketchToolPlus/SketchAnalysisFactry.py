@@ -7,25 +7,65 @@ import adsk.fusion
 
 class SketchAnalysisFactry:
 
+
     @staticmethod
     def findLackConstraints(
         skt :adsk.fusion.Sketch
         ) -> list:
 
         # point
-        pntLst = [p.geometry for p in skt.sketchPoints if not p.isFullyConstrained]
+        pntLst = [p.worldGeometry for p in skt.sketchPoints if not p.isFullyConstrained]
         Cir3D = adsk.core.Circle3D
         zDir :adsk.core.Vector3D = skt.xDirection.crossProduct(skt.yDirection)
         pntLst = [Cir3D.createByCenter(p, zDir, 0.1) for p in pntLst]
 
         # curve
         sktCrvs :adsk.fusion.SketchCurves = skt.sketchCurves
-        crvLst = [c.geometry for c in sktCrvs if not c.isFullyConstrained]
+        crvLst = [c.worldGeometry for c in sktCrvs if not c.isFullyConstrained]
 
+        # all
         lst = crvLst
         lst.extend(pntLst)
 
+        # get Matrix
+        matZero :adsk.core.Matrix3D = adsk.core.Matrix3D.create()
+        mat = SketchAnalysisFactry.getOccMatrixFromSketch(skt)
+        mat.invert()
+
+        # transform
+        if not mat.isEqualTo(matZero):
+            tmp = lst
+            lst = []
+            for c in tmp:
+                c.transformBy(mat)
+                lst.append(c)
+
         return lst
+
+    @staticmethod
+    def getOccMatrixFromSketch(
+        skt :adsk.fusion.Sketch
+        ) -> adsk.core.Matrix3D:
+
+        try:
+            # occ
+            occ :adsk.fusion.Occurrence = skt.assemblyContext
+            des = adsk.fusion.Design.cast(occ.component.parentDesign)
+            root = des.rootComponent
+
+            mat = adsk.core.Matrix3D.create()
+            occ_names = occ.fullPathName.split('+')
+            occs = [root.allOccurrences.itemByName(name) 
+                        for name in occ_names]
+            mat3ds = [occ.transform for occ in occs]
+            mat3ds.reverse() #important!!
+            for mat3d in mat3ds:
+                mat.transformBy(mat3d)
+
+            return mat
+        except:
+            # root
+            return adsk.core.Matrix3D.create()
 
 
 class CustomGraphicsFactry:

@@ -14,7 +14,7 @@
 
 インストールする際は、zipファイルをダウンロード/展開後 "SketchToolPlus" フォルダをアドインとして登録してください。
 
-アドインの登録は、[こちら](https://knowledge.autodesk.com/ja/support/fusion-360/troubleshooting/caas/sfdcarticles/sfdcarticles/JPN/How-to-install-an-ADD-IN-and-Script-in-Fusion-360.html)の手順に従ってください。
+アドインの登録は、[こちら](https://kantoku.hatenablog.com/entry/2021/02/15/161734)の手順に従ってください。
 
 ## 使用法:
 

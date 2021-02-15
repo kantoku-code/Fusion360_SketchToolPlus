@@ -1,5 +1,8 @@
 # Change of Fusion360_SketchToolPlus
 
+## 0.0.3
++ "Sketch Analysis" 表示の不具合修正
+
 ## 0.0.2
 + 拘束不足の要素を強調表示する "Sketch Analysis" コマンド追加
 
