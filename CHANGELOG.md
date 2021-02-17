@@ -1,5 +1,8 @@
 # Change of Fusion360_SketchToolPlus
 
+## 0.0.4
++ "起動時に実行"の不具合修正
+
 ## 0.0.3
 + "Sketch Analysis" 表示の不具合修正
 
