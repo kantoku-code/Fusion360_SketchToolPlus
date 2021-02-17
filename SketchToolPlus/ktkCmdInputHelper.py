@@ -11,10 +11,6 @@ import dataclasses
 # https://qiita.com/tag1216/items/13b032348c893667862a
 # https://www.mathpython.com/ja/dataclass/
 
-_app :adsk.core.Application = adsk.core.Application.get()
-_des :adsk.fusion.Design = _app.activeProduct
-_unitMgr :adsk.fusion.FusionUnitsManager = _des.unitsManager
-
 
 # https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-568db63a-0f28-4307-9e02-e29f54820db1
 @dataclasses.dataclass
@@ -95,13 +91,20 @@ class ValueCommandInputHelper:
     id : str
     name : str
 
-    unitType : str = _unitMgr.defaultLengthUnits
-    initialValue : adsk.core.ValueInput = adsk.core.ValueInput.createByString(
-        f'1{_unitMgr.defaultLengthUnits}')
+    unitType : str = ''
+    initialValue : adsk.core.ValueInput = dataclasses.field(default=None)
 
     obj : adsk.core.ValueCommandInput = dataclasses.field(default=None)
 
     def register(self, targetInputs :adsk.core.CommandInputs):
+        app :adsk.core.Application = adsk.core.Application.get()
+        des :adsk.fusion.Design = app.activeProduct
+        unitMgr :adsk.fusion.FusionUnitsManager = des.unitsManager
+
+        self.unitType : str = unitMgr.defaultLengthUnits
+        self.initialValue : adsk.core.ValueInput = adsk.core.ValueInput.createByString(
+            f'1{unitMgr.defaultLengthUnits}')
+
         self.obj = targetInputs.addValueInput(
             self.id,
             self.name,
