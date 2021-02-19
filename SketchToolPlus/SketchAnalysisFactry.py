@@ -14,10 +14,14 @@ class SketchAnalysisFactry:
         ) -> list:
 
         # point
+        adsk.fusion.SketchCircle.fromPoint = False
+
         pntLst = [p.worldGeometry for p in skt.sketchPoints if not p.isFullyConstrained]
         Cir3D = adsk.core.Circle3D
         zDir :adsk.core.Vector3D = skt.xDirection.crossProduct(skt.yDirection)
         pntLst = [Cir3D.createByCenter(p, zDir, 0.1) for p in pntLst]
+        for c in pntLst:
+            c.fromPoint = True
 
         # curve
         sktCrvs :adsk.fusion.SketchCurves = skt.sketchCurves

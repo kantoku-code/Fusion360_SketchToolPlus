@@ -110,3 +110,30 @@ class ValueCommandInputHelper:
             self.name,
             self.unitType,
             self.initialValue)
+
+
+# https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-C3F746B3-6488-4B74-A441-31AFDEFD1648
+@dataclasses.dataclass
+class TableCommandInputHelper:
+    id : str
+    name : str
+    columnRatio : str
+
+    lstCount : int = 0
+    ipts : adsk.core.CommandInputs = dataclasses.field(default=None)
+    obj : adsk.core.TableCommandInput = dataclasses.field(default=None)
+
+    def register(self, targetInputs :adsk.core.CommandInputs):
+        self.obj = targetInputs.addTableCommandInput(
+            self.id,
+            self.name,
+            0,
+            self.columnRatio)
+        self.ipts = targetInputs
+    
+    def add(self, txt :str):
+        row = self.obj.rowCount
+        txtObj = self.ipts.addStringValueInput(
+            self.id + f'txt{row}','txt',txt)
+        txtObj.isReadOnly = True
+        self.obj.addCommandInput(txtObj, row, 0)
