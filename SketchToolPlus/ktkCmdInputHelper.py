@@ -134,6 +134,6 @@ class TableCommandInputHelper:
     def add(self, txt :str):
         row = self.obj.rowCount
         txtObj = self.ipts.addStringValueInput(
-            self.id + f'txt{row}','txt',txt)
+            self.id + f'txt_{row}','txt',txt)
         txtObj.isReadOnly = True
         self.obj.addCommandInput(txtObj, row, 0)

@@ -1,5 +1,8 @@
 # Change of Fusion360_SketchToolPlus
 
+## 0.0.5
++ "Sketch Analysis" 要素のフォーカス機能追加
+
 ## 0.0.4
 + "起動時に実行"の不具合修正
 

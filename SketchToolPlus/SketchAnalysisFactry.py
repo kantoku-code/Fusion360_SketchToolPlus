@@ -11,7 +11,7 @@ class SketchAnalysisFactry:
     @staticmethod
     def findLackConstraints(
         skt :adsk.fusion.Sketch
-        ) -> list:
+        ):# -> list:
 
         # point
         adsk.fusion.SketchCircle.fromPoint = False
@@ -31,6 +31,8 @@ class SketchAnalysisFactry:
         lst = crvLst
         lst.extend(pntLst)
 
+        native = [v.copy() for v in lst]
+
         # get Matrix
         matZero :adsk.core.Matrix3D = adsk.core.Matrix3D.create()
         mat = SketchAnalysisFactry.getOccMatrixFromSketch(skt)
@@ -44,7 +46,7 @@ class SketchAnalysisFactry:
                 c.transformBy(mat)
                 lst.append(c)
 
-        return lst
+        return lst, native
 
     @staticmethod
     def getOccMatrixFromSketch(
