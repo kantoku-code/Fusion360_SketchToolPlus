@@ -26,7 +26,7 @@
 
 + [SketchAnalysis](./doc/SketchAnalysis.md)
 
-+ [SketchAnalysis](./doc/HighlightingConstraintEntities.md)
++ [拘束要素のハイライト](./doc/HighlightingConstraintEntities.md)
 
 ## ライセンス:
 MIT
