@@ -1,6 +1,5 @@
 #Fusion360API Python
 
-
 import adsk
 import adsk.core as core
 import adsk.fusion as fusion
@@ -37,54 +36,12 @@ class HighlightingConstraintEntitiesFactry:
         if len(entities) < 1:
             return
 
-        mat: core.Matrix3D = self._get_matrix_to_origin(constraint)
+        geometries = [sktEnt.worldGeometry for sktEnt in entities]
 
-        geometries = self._get_world_geometries_from_sketch_entities(
-            entities,
-            mat
+        self.cgFact.update(
+            geometries,
+            constraint.parentSketch.parentComponent,
         )
-
-        self.cgFact.update(geometries)
-
-
-    def _get_matrix_to_origin(
-        self,
-        constraint: fusion.GeometricConstraint
-    ) -> core.Matrix3D:
-        '''
-        ルートコンポーネントへのマトリックス取得
-        '''
-
-        skt: fusion.Sketch = constraint.parentSketch
-        occ: fusion.Occurrence = skt.assemblyContext
-        mat: core.Matrix3D = None
-        if occ:
-            mat = occ.transform2
-        else:
-            mat = None #core.Matrix3D.create
-
-        return mat
-
-    def _get_world_geometries_from_sketch_entities(
-        self,
-        sketchEntities: list,
-        matrix: core.Matrix3D = None
-    ) -> list:
-        '''
-        ルート位置でのジオメトリ取得
-        '''
-
-        geometries = []
-
-        sktEnt: fusion.SketchEntity = None
-        for sktEnt in sketchEntities:
-            geo: core.Line3D = sktEnt.worldGeometry
-            if matrix:
-                geo.transformBy(matrix)
-
-            geometries.append(geo)
-
-        return geometries
 
 
     def _get_constraint_entities(
@@ -131,7 +88,6 @@ class CustomGraphicsManager():
 
         self.app: core.Application = core.Application.get()
         self.des: fusion.Design = self.app.activeProduct
-        # self.root: fusion.Component = self.des.rootComponent
 
         self.cgGroup: fusion.CustomGraphicsGroup = None
 
@@ -169,17 +125,6 @@ class CustomGraphicsManager():
             gps.reverse()
             for gp in gps:
                 gp.deleteMe()
-
-
-    # def refreshCG(
-    #     self
-    # ) -> None:
-    #     '''
-    #     CGのリフレッシュ
-    #     '''
-
-    #     self.removeCG()
-
 
 
     def update(

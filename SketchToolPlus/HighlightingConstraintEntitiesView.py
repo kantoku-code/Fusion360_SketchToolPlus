@@ -1,15 +1,10 @@
-#Author-kantoku
-#Description-
 #Fusion360API Python
-
-# ハイライトさせる色のRGB
-_colorRGB = [0,0,255]
 
 import adsk
 import adsk.core as core
-import adsk.fusion as fusion
+# import adsk.fusion as fusion
 
-from .Fusion360Utilities.Fusion360Utilities import AppObjects
+# from .Fusion360Utilities.Fusion360Utilities import AppObjects
 from .Fusion360Utilities.Fusion360CommandBase import Fusion360CommandBase
 from .HighlightingConstraintEntitiesFactry import HighlightingConstraintEntitiesFactry
 
@@ -37,6 +32,7 @@ class HighlightingConstraintEntitiesView(Fusion360CommandBase):
         pass
 
     def on_create(self, command: core.Command, inputs: core.CommandInputs):
+        command.isPositionDependent = True
         command.isOKButtonVisible = False
 
         # event
