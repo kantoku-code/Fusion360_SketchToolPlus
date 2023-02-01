@@ -26,10 +26,7 @@
 
 + [SketchAnalysis](./doc/SketchAnalysis.md)
 
-## アクション:
-以下の環境で確認しています。
- + Fusion360 Ver2.0.9512
- + Windows10 64bit Pro , Home
++ [SketchAnalysis](./doc/HighlightingConstraintEntities.md)
 
 ## ライセンス:
 MIT

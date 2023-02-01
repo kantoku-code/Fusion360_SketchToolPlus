@@ -54,8 +54,8 @@ def run(context):
     command_definitions.append(cmd)
 
     cmd = {
-        'cmd_name': '拘束要素のハイライト',
-        'cmd_description': '拘束要素のハイライト',
+        'cmd_name': '拘束要素をハイライト',
+        'cmd_description': '幾何拘束に関連する要素をハイライト',
         'cmd_id': 'kantoku_HighlightingConstraintEntities',
         'cmd_resources': './resources/HighlightingConstraintEntities',
         'workspace': 'FusionSolidEnvironment',
