@@ -15,15 +15,15 @@ To register add-ins, follow the instructions [here](https://knowledge.autodesk.c
 
 Please see the description for each command.
 
-+ [Divider](./SketchToolPlus/commands/Divider) : Crea puntos espaciados uniformemente en la curva de croquis especificada.
++ [Divider](./SketchToolPlus/commands/Divider/) : Crea puntos espaciados uniformemente en la curva de croquis especificada.
 
-+ [Distance between 2 points on curve](./SketchToolPlus/ommands/PointsDistanceOnCurve) : Measures the distance on a curve between two specified points.
++ [Distance between 2 points on curve](./SketchToolPlus/commands/PointsDistanceOnCurve/) : Measures the distance on a curve between two specified points.
 
-+ [Sketch Analysis](./SketchToolPlus/ommands/SketchAnalysis) : Look for elements of lack of restraint in the sketch.
++ [Sketch Analysis](./SketchToolPlus/commands/SketchAnalysis/) : Look for elements of lack of restraint in the sketch.
 
-+ [Highlighting Entities](./SketchToolPlus/ommands/HighlightingEntities) : Highlight sketch elements related to geometric constraints.
++ [Highlighting Entities](./SketchToolPlus/commands/HighlightingEntities/) : Highlight sketch elements related to geometric constraints.
 
-+ [Sketch Plane](./SketchToolPlus/ommands/SketchPlane) : Find the plane at which the sketch was created.
++ [Sketch Plane](./SketchToolPlus/commands/SketchPlane/) : Find the plane at which the sketch was created.
 
 ## **License**:
 MIT
@@ -47,15 +47,15 @@ MIT
 
 アドインを起動。コマンドが追加される位置等は、各コマンドの説明をご覧ください。
 
-+ [ディバイダ](./SketchToolPlus/commands/Divider) : 指定したスケッチ線に等間隔の点を作成します。
++ [ディバイダ](./SketchToolPlus/commands/Divider/) : 指定したスケッチ線に等間隔の点を作成します。
 
-+ [曲線上の2点間距離](./SketchToolPlus/ommands/PointsDistanceOnCurve) : 指定した2点間の線上の距離を測定します。
++ [曲線上の2点間距離](./SketchToolPlus/commands/PointsDistanceOnCurve/) : 指定した2点間の線上の距離を測定します。
 
-+ [スケッチ解析](./SketchToolPlus/ommands/SketchAnalysis) : 拘束不足のスケッチ要素を強調表示します。
++ [スケッチ解析](./SketchToolPlus/commands/SketchAnalysis/) : 拘束不足のスケッチ要素を強調表示します。
 
-+ [要素のハイライト](./SketchToolPlus/ommands/HighlightingEntities) : 幾何拘束に関連するスケッチ要素をハイライトします。
++ [要素のハイライト](./SketchToolPlus/commands/HighlightingEntities/) : 幾何拘束に関連するスケッチ要素をハイライトします。
 
-+ [スケッチ平面](./SketchToolPlus/ommands/SketchPlane) : スケッチ作成時の平面を探します。
++ [スケッチ平面](./SketchToolPlus/commands/SketchPlane/) : スケッチ作成時の平面を探します。
 
 
 ## **ライセンス**:
