@@ -1,0 +1,90 @@
+{
+    "de-DE": {
+        "jp": "ドイツ語",
+        "Sketch": "Skizze",
+        "Only available in parametric mode.": "Nur im parametrischen Modus verfügbar.",
+        "Select the sketch element for which you want to examine the reference plane.": "Wählen Sie das Skizzenelement aus, für das Sie die Bezugsebene untersuchen möchten.",
+        "Find the plane at which the sketch was created.": "Suchen Sie die Ebene, in der die Skizze erstellt wurde.",
+        "Sketch Plane": "Skizzier-Ebene"
+    },
+    "en-US": {
+        "jp": "英語",
+        "Sketch": "Sketch",
+        "Only available in parametric mode.": "Only available in parametric mode.",
+        "Select the sketch element for which you want to examine the reference plane.": "Select the sketch element for which you want to examine the reference plane.",
+        "Find the plane at which the sketch was created.": "Find the plane at which the sketch was created.",
+        "Sketch Plane": "Sketch Plane"
+    },
+    "es-ES": {
+        "jp": "スペイン語",
+        "Sketch": "Boceto",
+        "Only available in parametric mode.": "Sólo disponible en modo paramétrico.",
+        "Select the sketch element for which you want to examine the reference plane.": "Seleccione el elemento de croquis cuyo plano de referencia desea examinar.",
+        "Find the plane at which the sketch was created.": "Busque el plano en el que se creó el croquis.",
+        "Sketch Plane": "Plano de croquis"
+    },
+    "fr-FR": {
+        "jp": "フランス語",
+        "Sketch": "Esquisse",
+        "Only available in parametric mode.": "Uniquement disponible en mode paramétrique.",
+        "Select the sketch element for which you want to examine the reference plane.": "Sélectionnez l'élément d'esquisse dont vous souhaitez examiner le plan de référence.",
+        "Find the plane at which the sketch was created.": "Recherchez le plan sur lequel l'esquisse a été créée.",
+        "Sketch Plane": "Plan de l'esquisse"
+    },
+    "it-IT": {
+        "jp": "イタリア語",
+        "Sketch": "Schizzo",
+        "Only available in parametric mode.": "Disponibile solo in modalità parametrica.",
+        "Select the sketch element for which you want to examine the reference plane.": "Selezionare l'elemento dello schizzo per il quale si desidera esaminare il piano di riferimento.",
+        "Find the plane at which the sketch was created.": "Individuare il piano in cui è stato creato lo schizzo.",
+        "Sketch Plane": "Piano di schizzo"
+    },
+    "ja-JP": {
+        "jp": "日本語",
+        "Sketch": "スケッチ",
+        "Only available in parametric mode.": "パラメトリックモードのみ利用可能です。",
+        "Select the sketch element for which you want to examine the reference plane.": "参照平面を調べるスケッチ要素を、選択して下さい。",
+        "Find the plane at which the sketch was created.": "スケッチ作成時の平面を探します。",
+        "Sketch Plane": "スケッチ平面"
+    },
+    "ko-KR": {
+        "jp": "韓国語",
+        "Sketch": "스케치",
+        "Only available in parametric mode.": "파라메트릭 모드에서만 사용할 수 있습니다.",
+        "Select the sketch element for which you want to examine the reference plane.": "참조 평면을 검사할 스케치 요소를 선택합니다.",
+        "Find the plane at which the sketch was created.": "스케치가 생성된 평면을 찾습니다.",
+        "Sketch Plane": "스케치 평면"
+    },
+    "zh-CN": {
+        "jp": "中国語",
+        "Sketch": "简图",
+        "Only available in parametric mode.": "只在参数化模式下可用。",
+        "Select the sketch element for which you want to examine the reference plane.": "选择你想检查参考平面的草图元素。",
+        "Find the plane at which the sketch was created.": "找到创建草图的平面。",
+        "Sketch Plane": "草图平面"
+    },
+    "pl-PL": {
+        "jp": "ポーランド",
+        "Sketch": "Szkic",
+        "Only available in parametric mode.": "Dostępne tylko w trybie parametrycznym.",
+        "Select the sketch element for which you want to examine the reference plane.": "Wybierz element szkicu, dla którego chcesz sprawdzić płaszczyznę odniesienia.",
+        "Find the plane at which the sketch was created.": "Znajdź płaszczyznę, na której został utworzony szkic.",
+        "Sketch Plane": "Płaszczyzna szkicu"
+    },
+    "pt-BR": {
+        "jp": "ポルトガル_ブラジル",
+        "Sketch": "Esboço",
+        "Only available in parametric mode.": "Disponível somente no modo paramétrico.",
+        "Select the sketch element for which you want to examine the reference plane.": "Selecione o elemento de esboço para o qual você deseja examinar o plano de referência.",
+        "Find the plane at which the sketch was created.": "Localize o plano no qual o esboço foi criado.",
+        "Sketch Plane": "Plano de esboço"
+    },
+    "tr-TR": {
+        "jp": "トルコ",
+        "Sketch": "Eskiz",
+        "Only available in parametric mode.": "Sadece parametrik modda kullanılabilir.",
+        "Select the sketch element for which you want to examine the reference plane.": "Referans düzlemini incelemek istediğiniz eskiz elemanını seçin.",
+        "Find the plane at which the sketch was created.": "Eskizin oluşturulduğu düzlemi bulun.",
+        "Sketch Plane": "Eskiz Düzlemi"
+    }
+}

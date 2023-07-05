@@ -1,0 +1,68 @@
+{
+    "de-DE": {
+        "jp": "ドイツ語",
+        "Select Geometric Constraints": "Geometrische Zwangsbedingungen auswählen",
+        "Highlight sketch elements related to geometric constraints.": "Heben Sie Skizzenelemente hervor, die mit geometrischen Zwangsbedingungen verbunden sind.",
+        "Highlighting Entities": "Hervorheben von Objekten"
+    },
+    "en-US": {
+        "jp": "英語",
+        "Select Geometric Constraints": "Select Geometric Constraints",
+        "Highlight sketch elements related to geometric constraints.": "Highlight sketch elements related to geometric constraints.",
+        "Highlighting Entities": "Highlighting Entities"
+    },
+    "es-ES": {
+        "jp": "スペイン語",
+        "Select Geometric Constraints": "Seleccionar restricciones geométricas",
+        "Highlight sketch elements related to geometric constraints.": "Resalte los elementos de croquis relacionados con restricciones geométricas.",
+        "Highlighting Entities": "Resaltar entidades"
+    },
+    "fr-FR": {
+        "jp": "フランス語",
+        "Select Geometric Constraints": "Sélectionner les contraintes géométriques",
+        "Highlight sketch elements related to geometric constraints.": "Mettre en évidence les éléments de l'esquisse liés aux contraintes géométriques.",
+        "Highlighting Entities": "Mise en évidence des entités"
+    },
+    "it-IT": {
+        "jp": "イタリア語",
+        "Select Geometric Constraints": "Selezionare i vincoli geometrici",
+        "Highlight sketch elements related to geometric constraints.": "Evidenzia gli elementi del disegno relativi ai vincoli geometrici.",
+        "Highlighting Entities": "Evidenziare le entità"
+    },
+    "ja-JP": {
+        "jp": "日本語",
+        "Select Geometric Constraints": "幾何拘束を選択",
+        "Highlight sketch elements related to geometric constraints.": "幾何拘束に関連するスケッチ要素をハイライトします",
+        "Highlighting Entities": "要素のハイライト"
+    },
+    "ko-KR": {
+        "jp": "韓国語",
+        "Select Geometric Constraints": "기하학적 제약 조건 선택",
+        "Highlight sketch elements related to geometric constraints.": "기하학적 제약 조건과 관련된 스케치 요소를 강조 표시합니다.",
+        "Highlighting Entities": "엔티티 강조 표시"
+    },
+    "zh-CN": {
+        "jp": "中国語",
+        "Select Geometric Constraints": "选择几何约束条件",
+        "Highlight sketch elements related to geometric constraints.": "突出显示与几何约束有关的草图元素。",
+        "Highlighting Entities": "突出显示实体"
+    },
+    "pl-PL": {
+        "jp": "ポーランド",
+        "Select Geometric Constraints": "Wybierz ograniczenia geometryczne",
+        "Highlight sketch elements related to geometric constraints.": "Wyróżnianie elementów szkicu powiązanych z ograniczeniami geometrycznymi.",
+        "Highlighting Entities": "Wyróżnianie podmiotów"
+    },
+    "pt-BR": {
+        "jp": "ポルトガル_ブラジル",
+        "Select Geometric Constraints": "Selecionar restrições geométricas",
+        "Highlight sketch elements related to geometric constraints.": "Destaque elementos de esboço relacionados a restrições geométricas.",
+        "Highlighting Entities": "Destaque de entidades"
+    },
+    "tr-TR": {
+        "jp": "トルコ",
+        "Select Geometric Constraints": "Geometrik Kısıtlamaları Seçin",
+        "Highlight sketch elements related to geometric constraints.": "Geometrik kısıtlamalarla ilgili eskiz öğelerini vurgulayın.",
+        "Highlighting Entities": "Varlıkları Vurgulama"
+    }
+}

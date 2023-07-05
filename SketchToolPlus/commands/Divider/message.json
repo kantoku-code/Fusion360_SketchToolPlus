@@ -1,0 +1,112 @@
+{
+    "de-DE": {
+        "jp": "ドイツ語",
+        "Interval": "Intervall",
+        "Length": "Länge",
+        "Division Count": "Anzahl der Teilungen",
+        "Please select a sketch curve to create evenly spaced points.": "Bitte wählen Sie eine Skizzenkurve, um gleichmäßig verteilte Punkte zu erstellen.",
+        "Sketch Curve": "Skizzenkurve",
+        "Creates equally spaced points on the specified sketch curve.": "Erzeugt gleichmäßig verteilte Punkte auf der angegebenen Skizzenkurve.",
+        "Divider": "Teiler"
+    },
+    "en-US": {
+        "jp": "英語",
+        "Interval": "Interval",
+        "Length": "Länge",
+        "Division Count": "Division Count",
+        "Please select a sketch curve to create evenly spaced points.": "Please select a sketch curve to create evenly spaced points.",
+        "Sketch Curve": "Sketch Curve",
+        "Creates equally spaced points on the specified sketch curve.": "Creates equally spaced points on the specified sketch curve.",
+        "Dividerr": "Divider"
+    },
+    "es-ES": {
+        "jp": "スペイン語",
+        "Interval": "Intervalo",
+        "Length": "Longitud",
+        "Division Count": "Recuento de divisiones",
+        "Please select a sketch curve to create evenly spaced points.": "Seleccione una curva de croquis para crear puntos espaciados uniformemente.",
+        "Sketch Curve": "Curva de croquis",
+        "Creates equally spaced points on the specified sketch curve.": "Crea puntos espaciados uniformemente en la curva de croquis especificada.",
+        "Divider": "Divisor"
+    },
+    "fr-FR": {
+        "jp": "フランス語",
+        "Interval": "Intervalle",
+        "Length": "Longueur",
+        "Division Count": "Nombre de divisions",
+        "Please select a sketch curve to create evenly spaced points.": "Veuillez sélectionner une courbe d'esquisse pour créer des points régulièrement espacés.",
+        "Sketch Curve": "Courbe d'esquisse",
+        "Creates equally spaced points on the specified sketch curve.": "Crée des points régulièrement espacés sur la courbe d'esquisse spécifiée.",
+        "Divider": "Diviseur"
+    },
+    "it-IT": {
+        "jp": "イタリア語",
+        "Interval": "Intervallo",
+        "Length": "Lunghezza",
+        "Division Count": "Conteggio delle divisioni",
+        "Please select a sketch curve to create evenly spaced points.": "Selezionare una curva di schizzo per creare punti uniformemente distanziati.",
+        "Sketch Curve": "Curva di schizzo",
+        "Creates equally spaced points on the specified sketch curve.": "Crea punti equidistanti sulla curva di schizzo specificata.",
+        "Divider": "Divisore"
+    },
+    "ja-JP": {
+        "jp": "日本語",
+        "Interval": "間隔",
+        "Length": "長さ",
+        "Division Count": "分割数",
+        "Please select a sketch curve to create evenly spaced points.": "等間隔の点作成するスケッチの線を選択",
+        "Sketch Curve": "スケッチ線",
+        "Creates equally spaced points on the specified sketch curve.": "指定したスケッチ曲線に等間隔の点を作成します。",
+        "Divider": "ディバイダ"
+    },
+    "ko-KR": {
+        "jp": "韓国語",
+        "Interval": "간격",
+        "Length": "길이",
+        "Division Count": "분할 개수",
+        "Please select a sketch curve to create evenly spaced points.": "균등한 간격의 점을 만들려면 스케치 커브를 선택하세요.",
+        "Sketch Curve": "스케치 커브",
+        "Creates equally spaced points on the specified sketch curve.": "지정된 스케치 커브에 동일한 간격의 점을 만듭니다.",
+        "Divider": "디바이더"
+    },
+    "zh-CN": {
+        "jp": "中国語",
+        "Interval": "间隔",
+        "Length": "长度",
+        "Division Count": "分割数",
+        "Please select a sketch curve to create evenly spaced points.": "请选择一条草图曲线来创建均匀的点。",
+        "Sketch Curve": "草图曲线",
+        "Creates equally spaced points on the specified sketch curve.": "在指定的草图曲线上创建等距的点。",
+        "Divider": "分割器"
+    },
+    "pl-PL": {
+        "jp": "ポーランド",
+        "Interval": "Interwał",
+        "Length": "Długość",
+        "Division Count": "Liczba podziałów",
+        "Please select a sketch curve to create evenly spaced points.": "Wybierz krzywą szkicu, aby utworzyć równomiernie rozmieszczone punkty.",
+        "Sketch Curve": "Krzywa szkicu",
+        "Creates equally spaced points on the specified sketch curve.": "Tworzy równo rozmieszczone punkty na określonej krzywej szkicu.",
+        "Divider": "Dzielnik"
+    },
+    "pt-BR": {
+        "jp": "ポルトガル_ブラジル",
+        "Interval": "Intervalo",
+        "Length": "Comprimento",
+        "Division Count": "Contagem de divisões",
+        "Please select a sketch curve to create evenly spaced points.": "Selecione uma curva de esboço para criar pontos uniformemente espaçados.",
+        "Sketch Curve": "Curva de esboço",
+        "Creates equally spaced points on the specified sketch curve.": "Cria pontos igualmente espaçados na curva de esboço especificada.",
+        "Divider": "Divisor"
+    },
+    "tr-TR": {
+        "jp": "トルコ",
+        "Interval": "Aralık",
+        "Length": "Uzunluk",
+        "Division Count": "Bölüm Sayısı",
+        "Please select a sketch curve to create evenly spaced points.": "Eşit aralıklı noktalar oluşturmak için lütfen bir taslak eğrisi seçin.",
+        "Sketch Curve": "Eskiz Eğrisi",
+        "Creates equally spaced points on the specified sketch curve.": "Belirtilen taslak eğrisi üzerinde eşit aralıklı noktalar oluşturur.",
+        "Divider": "Bölücü"
+    }
+}
